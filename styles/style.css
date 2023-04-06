@@ -56,6 +56,7 @@ header{
     align-items: center;
     margin-bottom:100px;
 }
+
 @media (max-width:700px) {
     .item-header{
         font-size: 14px;
@@ -111,6 +112,40 @@ header{
         margin-top: 20px;
     }
 }
+
+@media (max-width:400px){
+    .item-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        width: 90%;
+        margin: 0;
+        font-size: 12px !important;
+    }
+    .motivos-item-header h2{
+        font-size:12px;
+    }
+    .motivos-item-content p{
+        font-size: 16px;
+    }
+    .animate__fadeInDown{
+        font-size: 18px;
+    }
+    .content{
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        max-width: 290px;
+        align-items: center;
+    }
+    .carro img{
+      max-width: 290px;
+    }
+    .motivos{
+        max-width: 90%;
+    }
+}
 .item-header-footer h2{
     margin-top: 100px;
 }
@@ -122,6 +157,9 @@ header{
     padding:20px 30px;
     border-radius: 20px;
     transition: .5s;
+}
+.motivos-item h1{
+    font-size: 20px;
 }
 .item-header a:hover{
     background-color: #9b7d10;
