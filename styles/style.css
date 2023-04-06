@@ -437,7 +437,7 @@ header{
 .chamada-geral:hover{
     transition: .5s;
     background-color: green;
-    background-image: url("../images/WhatsApp.svg");
+    
     background-repeat: no-repeat;
     background-position: 100px;
 }
