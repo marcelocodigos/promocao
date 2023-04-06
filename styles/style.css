@@ -299,6 +299,7 @@ header{
     justify-content:space-around;
     border-bottom:60px solid rgb(33, 33, 33);
     align-items: end;
+    transition: 1s;
 }
 .motivos-2--item{
     color: #DCB529;
@@ -379,4 +380,36 @@ header{
     font-size:x-large;
     border-radius: 20px;
     margin-top:10px;
+}
+.unidade ul li a{
+    color:#DCB529;
+    transition:.5s;
+}
+.unidade ul li a:hover{
+    color:#2935dc;
+}
+.chamada-geral:hover{
+    transition: .5s;
+    background-color: green;
+    background-image: url("../images/WhatsApp.svg");
+    background-repeat: no-repeat;
+    background-position: 100px;
+}
+footer{
+    background-color: black;
+    padding:6px;
+    color: #DCB529;
+    align-items: center;
+    text-align: center;
+    display:flex;
+justify-content: center;
+}
+footer a{
+    color:#aaaaac
+    
+}
+footer a:hover{
+    transition: .5s;
+    color: #9b7d10;
+    margin-left: 20px;
 }
