@@ -1,0 +1,382 @@
+body{
+    margin: 0;
+    padding:10px;
+    text-decoration: none;
+    font-family: "Inter",Arial;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+li{list-style: none;}
+a{
+    text-decoration: none;
+}
+h1,h2{
+    margin:0;
+}
+img{
+    margin: 0;
+}
+
+/*Header*/
+header{
+    background-image: url("../images/fundo-header-mulher-dirigindo-alto-escola-alma.png") ;
+    padding-top: 20px;
+    background-size: cover;
+    background-position: center;
+    animation: fadeOut 5s ease-in forwards;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    color:white;
+    animation: bg-move 10s infinite;
+
+}
+
+@keyframes bg-move {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 50% 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+
+.item-header{
+    align-items: center;
+    margin-bottom:100px;
+}
+@media (max-width:700px) {
+    .item-header{
+        font-size: 14px;
+        padding:40px;
+
+    }
+    .top-bar{
+        font-size: 14px;
+        max-width:350px;
+        padding:20px;
+    }
+    .content{
+        font-size: 14px;
+        color:black;
+        padding:30px;
+        width:350px;
+    }
+    .carro{
+        
+    }
+    .carro img{
+
+        width: 350px;
+    }
+    .tracejados{
+        max-width: 100%;
+    }
+    .motivos{
+        font-size:12px;
+        height:100vh;
+    }
+    .motivos-item-header h2{
+        font-size:18px;
+    }
+    .motivos-item-content p{
+        font-size: 20px;
+    }
+    .motivos-2{
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+    }
+    .motivos-2--item h1{
+        font-size: 18px;
+        color: aliceblue;
+    }
+    .md-p{
+        color: white !important;
+        font-size: 18px !important;
+    }
+    .motivos-2-item-content p{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+}
+.item-header-footer h2{
+    margin-top: 100px;
+}
+
+.item-header a{
+    color:white;
+   
+    background-color: #DCB529;
+    padding:20px 30px;
+    border-radius: 20px;
+    transition: .5s;
+}
+.item-header a:hover{
+    background-color: #9b7d10;
+}
+.cor-span{
+    color:#DCB529;
+    text-shadow: 1px 1px 1px 2px;
+}
+/* .item-header h1{
+    color: white;
+    margin-left:170px;
+    margin-top: 170px;
+}
+
+.item-header-h2-1 h2{
+    margin-top: 100px;
+    margin-left: 170px;
+    color:white;
+}
+
+.item-header-footer{
+ background-color: black;
+ position: relative;
+ top: 350px;
+}
+.item-header-footer h2{
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+} */
+
+/*Intro*/
+
+
+.top-bar{
+    background-color:black;
+    color:white;
+    text-align: center;
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    padding:20px 0;
+    justify-content: center;
+    padding-bottom:30px;
+}
+.tracejados{
+    background-image: url("../images/pista-horizonal-com-faixas-amarelas-alto-escol-alma.png");
+    background-position:center bottom;
+    background-size: contain;
+}
+.intro{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+  
+    flex-wrap: wrap-reverse;
+
+    
+    
+}
+
+.content{
+ 
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: space-between;
+
+}
+.titulo{
+    color: rgb(28, 28, 28);
+    
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    font-size: 18px;
+    opacity: 80%;
+}
+.botao{
+    display: inline-block;
+    align-items: center;
+    
+}
+.btn-action{
+    background-color: #DCB529;
+    padding:20px 30px;
+    display: inline-block;
+    
+}
+/* motivos para se habilitar*/
+.motivos{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    height: 700px;
+    background-image: url("../images/iamgem-grande\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    background-position: center;
+    animation: fadeOut 5s both forwards;
+    padding: 20px;
+   justify-content: center;
+   border-bottom:60px solid rgb(75, 75, 75);
+  
+}
+.motivos h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+.motivos h1{
+    color: #DCB529;
+    font-size: 60px;
+    padding-right: 10px;
+}
+.motivos-item-header{
+    text-shadow: 2px 2px 10px black;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.fundo-laranja{
+    background-color: #DCB529;
+    margin-left: 10px;
+}
+.motivos-item-content{
+    color: rgb(215, 215, 215);
+    font-size: 28px;
+    width: 70%;
+    text-shadow: 2px 2px 10px black;
+}
+/*Motivos 2*/
+.motivos-2{
+    background-image: url("../images/homne-entrando-no-onibus.png");
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:rgb(0, 0, 0);
+    background-position: center;
+    animation: fadeOut .4s step-end forwards;
+    padding: 20px;
+   justify-content: flex-start;
+   border-bottom:60px solid rgb(33, 33, 33);
+
+}
+.motivos-2 h1{
+    font-size: 50px;
+    color: #DCB529;
+}
+.motivos-2-item-content{
+    color:white;
+    font-size: 30px;
+    max-width: 800px;
+}
+.motivos-3{
+    background-image: url("../images/homen-dentro-do-carro.png");
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:rgb(0, 0, 0);
+    background-position: center;
+    animation: fadeOut .4s step-end forwards;
+    padding: 20px;
+    justify-content:space-around;
+    border-bottom:60px solid rgb(33, 33, 33);
+    align-items: end;
+}
+.motivos-2--item{
+    color: #DCB529;
+    text-shadow: 1px 1px 1px 5px black;
+    background-color: black;
+    padding: 10px;
+    opacity: 80%;
+}
+.motivos-2--item h1{
+    font-size: 50px;
+    background-color: rgb(22, 22, 22);
+    padding:10px;
+}
+.motivos-4{
+    font-size: 30px;
+    background-color: rgb(22, 22, 22);
+    padding:10px;
+    color:white;
+    padding:0 30px;
+    text-align: center;
+}
+.promocao-image{
+    display: flex;
+   
+}
+.promocao-image img{
+    max-width: 100%;
+}
+.unidades{
+    display: flex;
+    gap: 40px;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+ 
+}
+.local-sucesso-title{
+    text-align: center;
+    padding:10px 30px;
+    margin-top:40px;
+}
+.unidade{
+  
+   display: flex;
+ 
+   flex-direction: column;
+   border:1px solid rgb(193, 193, 193);
+   padding: 20px;
+   align-items:flex-start;
+   
+  
+}
+.unidade ul{
+   
+    margin: 0;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.unidade ul li{
+    font-size: 24px;
+    margin-bottom: 20px;
+
+}
+.unidade ul li img{
+    width: 24px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.chamada-geral{
+    display:inline-block;
+    width: 100%;
+    padding:20px 0px;
+    background-color: #9b7d10;
+    color: white;
+    text-align: center;
+    font-size:x-large;
+    border-radius: 20px;
+    margin-top:10px;
+}
