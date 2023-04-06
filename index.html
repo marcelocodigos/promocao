@@ -187,5 +187,25 @@
          <p>2023 Todos os Direito reservados |  </p>
          <p>  Desenvolvido Por:<a href="https://wa.me/11965878332">Marcelo Ferreira</a></p>
       </footer>
+ 
+         <script>
+  // seletor para o link clicado
+  const linkSelector = 'a[href^="#"]';
+
+  // adicionar evento de clique para todos os links com "#" no atributo "href"
+  document.querySelectorAll(linkSelector).forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      // seletor para o elemento final da página
+      const botaoFinal = document.querySelector('#unidades');
+
+      // animação de rolagem suave para o elemento final da página
+      botaoFinal.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    });
+  });
+</script>
+
+      </script>
 </body>
 </html>
